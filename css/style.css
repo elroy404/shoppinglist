@@ -1,0 +1,23 @@
+#header{
+  height: 100px;
+  width: 400px;
+  border: 2px solid red;
+}
+
+.container{
+  float: left;
+  height: auto;
+  width: 33%;
+  border: 2px solid orange;
+  box-sizing: border-box;
+}
+
+.container-header{
+  text-align: center;
+}
+/*.list-items, .list-complete, .list-archive{
+  display: inline;
+  height: 100px;
+  width: 20%;
+  border: 2px solid blue;
+}*/
