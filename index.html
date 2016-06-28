@@ -4,26 +4,43 @@
   <meta charset="UTF-8">
   <title>CheckList</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
 </head>
 <body>
   <!-- logo -->
   <header id="header">
     <a href="/" class="logo">Logo</a>
     <!-- enter item text box -->
-    <div class="item-box">item text box</div>
+    <div class="txt-box">
+      <input type="text" class="txt-input">
+    </div>
     <!-- add item button -->
-    <div class="item-button">Button</div>
+    <div class="item-button">
+      <button type="button">Add</button>
+    </div>
   </header>
   <!-- 'List' column  -->
   <section class="list-items">
     <div class="container">
       <h1 class=container-header>List Items</h1>
       <!-- added list items -->
-      <ul class="li">Apple</ul>
-      <ul class="li">Beer</ul>
-      <ul class="li">Meat</ul>
-      <ul class="li">Milk</ul>
-      <ul class="li">Frozen Pizza</ul>
+      <ul class="items">
+        <li class="item-1">
+          <i class="fa fa-check"></i>Apples
+        </li>
+        <li class="item-1">
+          <i class="fa fa-check"></i>Beer
+        </li>
+        <li class="item-1">
+          <i class="fa fa-check"></i>Meat
+        </li>
+        <li class="item-1">
+          <i class="fa fa-check"></i>Milk
+        </li>
+        <li class="item-1">
+          <i class="fa fa-check"></i>Frozen Pizza
+        </li>
+      </ul>
     </div>
   </section>
   <!-- 'Complete' column -->
@@ -31,11 +48,13 @@
     <div class="container">
       <h1 class=container-header>Completed</h1>
       <!-- added complete list -->
-      <ul class="li">Apple</ul>
-      <ul class="li">Beer</ul>
-      <ul class="li">Meat</ul>
-      <ul class="li">Milk</ul>
-      <ul class="li">Frozen Pizza</ul>
+      <ul class="completed">
+        <li class="item-1">Apple</li>
+        <li class="item-1">Beer</li>
+        <li class="item-1">Meat</li>
+        <li class="item-1">Milk</li>
+        <li class="item-1">Frozen Pizza</li>
+      </ul>
     </div>
   </section>
   <!-- 'Archive' column -->
@@ -43,11 +62,13 @@
     <div class="container">
       <h1 class=container-header>Archived</h1>
     <!-- added archive list items -->
-      <ul class="li">Apple</ul>
-      <ul class="li">Beer</ul>
-      <ul class="li">Meat</ul>
-      <ul class="li">Milk</ul>
-      <ul class="li">Frozen Pizza</ul>
+    <ul class="archived">
+      <li class="item-1">Apple</li>
+      <li class="item-1">Beer</li>
+      <li class="item-1">Meat</li>
+      <li class="item-1">Milk</li>
+      <li class="item-1">Frozen Pizza</li>
+    </ul>
     </div>
   </section>
 

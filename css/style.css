@@ -1,20 +1,33 @@
+*{
+  outline: 1px solid orange;
+}
+
 #header{
   height: 100px;
   width: 400px;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 .container{
   float: left;
   height: auto;
   width: 33%;
-  border: 2px solid orange;
   box-sizing: border-box;
+  /*border: 2px solid orange;*/
 }
 
 .container-header{
   text-align: center;
 }
+
+ul{
+  list-style: none;
+  padding-left:0;
+  text-align: left;
+  margin-left: 40%;
+}
+
+
 /*.list-items, .list-complete, .list-archive{
   display: inline;
   height: 100px;
