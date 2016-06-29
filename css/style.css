@@ -2,16 +2,10 @@
   outline: 1px solid orange;
 }
 
-#header{
-  height: 100px;
-  width: 400px;
-  /*border: 2px solid red;*/
-}
-
 .container{
   float: left;
   height: auto;
-  width: 33%;
+  width: 25%;
   box-sizing: border-box;
   /*border: 2px solid orange;*/
 }
@@ -35,10 +29,6 @@ ul{
   margin-left: 33%;
 }
 
-.checkbox{
-  float:left;
-}
-
 .fa-stack > .fa-check{
   display:none;
 }
@@ -46,6 +36,14 @@ ul{
 .item{
   float:left;
   font-size: 2em;
+}
+
+.checkbox{
+  float:left;
+}
+
+.add-list{
+  float:left;
 }
 
 /*.list-items, .list-complete, .list-archive{
