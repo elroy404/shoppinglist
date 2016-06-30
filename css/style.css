@@ -1,13 +1,35 @@
-*{
+/**{
   outline: 1px solid orange;
+}*/
+
+body{
+  background-color: #FFF8E1;
+  color: white;
+}
+
+.main-content{
+  margin-top: 2em;
 }
 
 .container{
   float: left;
-  height: auto;
+  min-height: 30em;
   width: 25%;
   box-sizing: border-box;
   /*border: 2px solid orange;*/
+}
+
+.txt-box{
+  height: 2em;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.add-button{
+  height: 3em;
+  width: 100%;
+  margin-top: 2em;
+  background-color: white;
 }
 
 .container-header{
@@ -25,25 +47,50 @@ ul{
 
 .item-container{
   height: 3em;
+  width: 100%;
   box-sizing: border-box;
-  margin-left: 33%;
+  /*border-style: solid;
+  border-width: .1em;
+  border-color: grey;*/
 }
 
 .fa-stack > .fa-check{
-  display:none;
+  display: none;
+}
+
+.item-container .fa-stack{
+  width: 25%;
 }
 
 .item{
-  float:left;
+  width: 50%;
+  float: left;
   font-size: 2em;
+  text-align: center;
 }
 
 .checkbox{
-  float:left;
+  float: left;
 }
 
 .add-list{
-  float:left;
+  float: left;
+}
+
+.input-container > .container{
+  background-color: #00ACC1;
+}
+
+.list-items > .container{
+  background-color: #0097A7;
+}
+
+.list-complete > .container{
+  background-color: #00838F;
+}
+
+.list-archive > .container{
+  background-color: #006064;
 }
 
 /*.list-items, .list-complete, .list-archive{

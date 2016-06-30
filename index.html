@@ -7,77 +7,78 @@
   <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-  <!-- logo -->
   <section class="header">
-    <div class="container">
-      <a href="/" class="logo">Logo</a>
-      <!-- enter item text box -->
-      <div class="txt-box">
-        <input type="text" class="txt-input">
-      </div>
-      <!-- add item button -->
-      <div class="item-button">
-        <button type="button">Add</button>
-      </div>
-    </div>
+    <h1><a href="/" class="logo">Logo</a></h1>
   </section>
-  <!-- 'List' column  -->
-  <section class="list-items">
-    <div class="container">
-      <h1 class=container-header>List Items</h1>
-      <!-- added list items -->
-      <ul class="items">
-        <li class="item-container">
-          <span class="fa-stack fa-lg checkbox">
-            <i class="fa fa-square-o fa-stack-2x"></i>
-            <i class="fa fa-check fa-stack-1x"></i>
-          </span>
-          <span class="item">Apples</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- 'Complete' column -->
-  <section class="list-complete">
-    <div class="container">
-      <h1 class=container-header>Completed</h1>
-      <!-- added complete list -->
-      <ul class="completed">
+  <div class="main-content">
+  <!-- logo -->
+    <section class="input-container">
+      <div class="container">
+        <!-- enter item text box -->
+        <form action="add-item">
+          <input type="text" class="txt-box">
+          <!-- add item button -->
+          <input type="submit" class="add-button" value="Add">
+        </form>
+      </div>
+    </section>
+    <!-- 'List' column  -->
+    <section class="list-items">
+      <div class="container">
+        <h1 class=container-header>List Items</h1>
+        <!-- added list items -->
+        <ul class="items">
+          <li class="item-container">
+            <span class="fa-stack fa-lg checkbox">
+              <i class="fa fa-square-o fa-stack-2x"></i>
+              <i class="fa fa-check fa-stack-1x"></i>
+            </span>
+            <span class="item">Apples</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 'Complete' column -->
+    <section class="list-complete">
+      <div class="container">
+        <h1 class=container-header>Completed</h1>
+        <!-- added complete list -->
+        <ul class="completed">
+          <li class="item-container">
+            <span class="fa-stack fa-lg add-list">
+              <i class="fa fa-square-o fa-stack-2x"></i>
+              <i class="fa fa-plus fa-stack-1x"></i>
+            </span>
+            <span class="item">Chips</span>
+            <span class="fa-stack fa-lg minus-list">
+              <i class="fa fa-square-o fa-stack-2x"></i>
+              <i class="fa fa-minus fa-stack-1x"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 'Archive' column -->
+    <section class="list-archive">
+      <div class="container">
+        <h1 class=container-header>Archived</h1>
+      <!-- added archive list items -->
+      <ul class="archived">
         <li class="item-container">
           <span class="fa-stack fa-lg add-list">
             <i class="fa fa-square-o fa-stack-2x"></i>
             <i class="fa fa-plus fa-stack-1x"></i>
           </span>
-          <span class="item">Chips</span>
-          <span class="fa-stack fa-lg minus-list">
+          <span class="item">Beer</span>
+          <span class="fa-stack fa-lg dump">
             <i class="fa fa-square-o fa-stack-2x"></i>
-            <i class="fa fa-minus fa-stack-1x"></i>
+            <i class="fa fa-trash-o fa-stack-1x"></i>
           </span>
         </li>
       </ul>
-    </div>
-  </section>
-  <!-- 'Archive' column -->
-  <section class="list-archive">
-    <div class="container">
-      <h1 class=container-header>Archived</h1>
-    <!-- added archive list items -->
-    <ul class="archived">
-      <li class="item-container">
-        <span class="fa-stack fa-lg add-list">
-          <i class="fa fa-square-o fa-stack-2x"></i>
-          <i class="fa fa-plus fa-stack-1x"></i>
-        </span>
-        <span class="item">Beer</span>
-        <span class="fa-stack fa-lg dump">
-          <i class="fa fa-square-o fa-stack-2x"></i>
-          <i class="fa fa-trash-o fa-stack-1x"></i>
-        </span>
-      </li>
-    </ul>
-    </div>
-  </section>
-
+      </div>
+    </section>
+  </div>
   <script src="http://code.jquery.com/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>
