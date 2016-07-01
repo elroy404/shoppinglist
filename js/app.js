@@ -1,32 +1,35 @@
 $(document).ready(function(){
-  $('.checkbox').hover(function(){
-    $('.fa-check').show();
-  },function(){
-    $('.fa-check').hide();
-  });
 
-  $(".add-button").click(function(){
+  // toggles hovering over a checkbox
+  // $('.items').hover(function(){
+  //   $('.check').show();
+  // },function(){
+  //   $('.check').hide();
+  // });
+
+  var identifier = 0;
+
+  $(".add-button").click(function(event){
     event.preventDefault();
-    var value = $(".txt-box").val();
-    console.log(value);
+    var listValue = $(".txt-box").val();
+    identifier++;
+    var addeditem = "<li class=\"item-container\" id=\"container-" + identifier +
+    "\"><span class=\"fa-stack fa-lg checkbox\">"+
+    "<i class=\"fa fa-square-o fa-stack-2x\"></i><i class=\"fa fa-check fa-stack-1x check\"></i></span>"+
+    "<span class=\"item\" id=\"item-\"" + identifier + ">"+ listValue + "</span></li>";
+
+    if (listValue != ""){
+      $(".items").append(addeditem);
+      console.log(addeditem);
+      $(".txt-box").val("");
+    }
+    else{
+      alert("Please enter items into box above");
+    }
   });
 
-//   $(".add-item").on("click","add-button",function(event){
-//     console.log("button click");
-//   var itemToAdd = $(this).parent().children(".add-item__input").val();
-//   if (itemToAdd != ""){
-//     console.log(itemToAdd);
-//     $(".stuff-i-need__list").prepend(
-//       "<li class=\"sl-item\"><span class=\"side check\">&#x2713;</span><span class=\"middle\">"
-//       +itemToAdd+"</span><span class=\"side ex\">&#x2717;</span></li>");
-//     $(this).parent().children(".add-item__input").val("");
-//   }
-//   else {
-//     alert("Please type in the box to add items");
-//   }
-// });
-
-
-
-
+  $(".items").click(function(){
+    var completedValue = $("span#item").text();
+    console.log(completedValue);
+  });
 });
