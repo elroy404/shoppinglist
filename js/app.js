@@ -7,7 +7,7 @@ $(document).ready(function(){
   //   $('.check').hide();
   // });
 
-  var identifier = 1;
+  var identifier = 2;
 
   $(".add-button").click(function(event){
     event.preventDefault();
