@@ -29,7 +29,7 @@ $(document).ready(function(){
   });
 
   $(".items").click(function(){
-    var completedValue = $("span#item").text();
+    var completedValue = $("span.item").text();
     console.log(completedValue);
   });
 });
